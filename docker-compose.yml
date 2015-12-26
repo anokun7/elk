@@ -7,7 +7,7 @@ search-data:
   entrypoint: /bin/echo search-data Data only container for elasticsearch
 
 elasticsearch:
-  build: elas
+  image: elasticsearch
   container_name: elasticsearch
   command: ["elasticsearch", "-Des.network.host=0.0.0.0"]
   volumes_from:
